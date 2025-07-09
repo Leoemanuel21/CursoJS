@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+</head>
+<body>
+    <h1>Dia da Semana</h1>
+    Click para saber qual dia é: <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var res = window.document.getElementById('res');
+            var agora = new Date();
+            var diaSem = agora.getDay();
+            switch(diaSem){
+            case 0:
+                res.innerHTML = ('Domingo');
+            break;
+            case 1:
+                res.innerHTML = ('Segunda');
+            break;
+            case 2:
+                res.innerHTML = ('Terça');
+            break;
+            case 3:
+                res.innerHTML = ('Quarta');
+            break;
+            case 4:
+                res.innerHTML = ('Quinta');
+            break;
+            case 5:
+                res.innerHTML = ('Sexta');
+            break;
+            case 6:
+                res.innerHTML = ('Sábado');
+            break;
+            default:
+                res.innerHTML = ('[ERRO] Dia inválido');
+            break;
+            }
+        }
+    </script>
+</body>
+</html>

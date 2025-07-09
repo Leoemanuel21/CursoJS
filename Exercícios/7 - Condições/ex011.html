@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+</head>
+<body>
+    <h1>Horário</h1>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var agora = new Date();
+            var hora = agora.getHours();
+            var res = window.document.getElementById('res');
+            res.innerHTML = `Agora são exatamente ${hora} horas. `
+            if(hora < 12){
+                res.innerHTML += ('Bom Dia!');
+            }else if(hora <= 18){
+                res.innerHTML += ('Boa Tarde!');
+            }else{
+                res.innerHTML += ('Boa Noite!');
+            }
+        }
+    </script>
+</body>
+</html>
