@@ -29,12 +29,20 @@ section{
     color: black;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div{
+    padding: 0.8rem;
 }
 
 footer{
     color: white;
     text-align: center;
     font-style: italic;
+    margin: 1rem;
 }
         
 h1{
