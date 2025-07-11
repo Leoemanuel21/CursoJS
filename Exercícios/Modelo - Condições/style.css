@@ -18,10 +18,6 @@ body{
     align-items: center;
 }
 
-header{
-            
-}
-
 section{
     width: 70vw;
     padding: 1.5rem;
@@ -39,4 +35,8 @@ footer{
         
 h1{
     margin: 3rem;
+}
+
+p{
+    padding: 0.5rem;
 }
