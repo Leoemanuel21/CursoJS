@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+     margin: 0rem;
+    padding: 0rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(107, 187, 241);
+    font: normal 1.5rem Arial;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header{
+            
+}
+
+section{
+    width: 70vw;
+    padding: 1.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div{
+    padding: 0.8rem;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin: 1rem;
+}
+        
+h1{
+    margin: 3rem;
+}
+
+p{
+    margin: 2rem;
+}
